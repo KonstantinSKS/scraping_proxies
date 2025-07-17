@@ -65,28 +65,18 @@ scrapy crawl proxy
 ```
 
 This will:
-
-parse proxies
-
-save data to proxies.json
-
-upload to test-rg8.ddns.net
-
-save the response to results.json
-
-log execution time to time.txt
+* parse proxies
+* save data to proxies.json
+* upload to test-rg8.ddns.net
+* save the response to results.json
+* log execution time to time.txt
 
 Это выполнит:
-
-парсинг прокси
-
-сохранение в proxies.json
-
-загрузку данных на test-rg8.ddns.net
-
-сохранение ответа в results.json
-
-логирование времени в time.txt
+* парсинг прокси
+* сохранение в proxies.json
+* загрузку данных на test-rg8.ddns.net
+* сохранение ответа в results.json
+* логирование времени в time.txt
 
 ## Author / Автор
 Konstantin Steblev / Стеблев Константин
