@@ -37,7 +37,7 @@ class ProxiesPipeline:
         try:
             token = spider.settings.get("PERSONAL_TOKEN")
             if not token:
-                spider.logger.warning("⚠ PERSONAL_TOKEN не задан в settings.py")
+                spider.logger.warning("PERSONAL_TOKEN is not set in settings.py")
                 return
 
             result = upload_proxies(self.proxies, token)

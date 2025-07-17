@@ -44,4 +44,4 @@ class ProxySpider(scrapy.Spider):
                     yield item
 
                 except Exception as e:
-                    self.logger.warning(f"Ошибка декодирования строки: {e}")
+                    self.logger.warning(f"String decoding error: {e}")
