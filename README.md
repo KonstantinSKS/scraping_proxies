@@ -1,5 +1,6 @@
 # scraping_proxies (Test Assignment)
 Parsing proxies and uploading them to the server
+
 Парсинг прокси и загрузка на сервер
 
 ## Description / Описание
@@ -29,6 +30,7 @@ cd scraping_proxies
 ```
 
 Create .env file in the root directory and fill it using .env.template — you will need a personal token for test-rg8.ddns.net.
+
 В корне проекта создать файл .env и заполнить по образцу .env.template — нужен персональный токен для test-rg8.ddns.net.
 
 Create and activate a virtual environment / Создать и активировать виртуальное окружение
@@ -63,17 +65,27 @@ scrapy crawl proxy
 ```
 
 This will:
+
 parse proxies
+
 save data to proxies.json
+
 upload to test-rg8.ddns.net
+
 save the response to results.json
+
 log execution time to time.txt
 
 Это выполнит:
+
 парсинг прокси
+
 сохранение в proxies.json
+
 загрузку данных на test-rg8.ddns.net
+
 сохранение ответа в results.json
+
 логирование времени в time.txt
 
 ## Author / Автор
