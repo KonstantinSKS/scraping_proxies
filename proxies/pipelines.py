@@ -10,9 +10,6 @@ class ProxiesPipeline:
     def open_spider(self, spider):
         self.start_time = time.time()
         self.proxies = []
-        self.output_file = open('proxies.json', 'w', encoding='utf-8')
-        self.output_file.write('[\n')
-        self.first = True
 
     def process_item(self, item, spider):
         ip = item['ip']
@@ -20,17 +17,9 @@ class ProxiesPipeline:
         proxy_string = f"{ip}:{port}"
         self.proxies.append(proxy_string)
 
-        if not self.first:
-            self.output_file.write(',\n')
-        else:
-            self.first = False
-
-        json.dump(dict(item), self.output_file, ensure_ascii=False, indent=2)
         return item
 
     def close_spider(self, spider):
-        self.output_file.write('\n]\n')
-        self.output_file.close()
 
         spider.logger.info("Uploading the collected proxies.")
 
